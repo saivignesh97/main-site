@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>Cooper Station</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" http-equiv="Content-type">
+<meta content="width=device-width,initial-scale=1" >
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700|Montserrat:400,700|Roboto:100,500" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/navscroll.js"></script>
+  <!--map embedding-->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADta9-9OCIW3NzmrZsp7bslpDklFNxHv4&callback=initMap"
+    async defer></script>
+<script src="js/map.js"></script>
+
+
+<body>
+<div id="back">
+<!--Navigation Bar-->
+ <nav class="navbar navbar-default" id="coopernav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+      <p id="CS" class="navbar-brand">COOPER STATION</p>
+      <p id="DS" class="navbar-brand">Design Studio</p>
+
+       <button type="button" class="navbar-toggle" id="colbut" data-toggle="collapse" data-target="#myNavbar">
+        <i class="material-icons">menu</i>
+        </button>
+
+    </div>
+
+   <!--Collapsing the nav bar-->
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a  id="about" href="#" class="underline liw">ABOUT</a></li>
+            <li><a href="#" id="services" class="underline liw">SERVICES</a></li>
+            <li><a href="#" id="process" class="underline liw">PROCESS</a></li>
+            <li><a href="#" id="portfolio" class="underline liw">PORTFOLIO</a></li>
+            <li><div id="sidebar-toggle" style="padding-top:23px;color:white;cursor:pointer" onclick="openNav()">...</div></li>
+          </ul>
+          </div>
+          <!--Side Navigation-->
+          <div id="mySidenav" class="sidenav">
+          <div class="cont-sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <p style="color:red;font-size:35px;font-family:'Montserrat',sans-serif!important;padding-left:35px">COOPER STATION</p>
+  <hr class="black-line">
+  <a href="#" onclick="closeNav()">ABOUT</a>
+  <a href="#" onclick="closeNav()">SERVICES</a>
+  <a href="#" onclick="closeNav()">PROCESS</a>
+  <a href="#" onclick="closeNav()">PORTFOLIO</a>
+  <hr class="red-line">
+  <p style="color:black;font-size:20px;font-family:'Montserrat',sans-serif!important;padding-left:115px;padding-top:35px">Connect with Us</p>
+  </div>
+  <!--Icons under Connect with Us-->
+  <div class="icons" id="fb">
+  <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+  </div>
+    <div class="icons" id="tw">
+  <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+  </div>
+  <div class="icons" id="link">
+  <a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="icons" id="ins">
+  <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+  </div>
+
+</div>
+
+       
+</nav>
+<!--End of Nav Section-->
+<div id="startchange"></div>
+<!--Image Sliders-->
+<div id="slider" onclick="closeNav()">
+<figure id="fig">
+<img src="images/pic1.png" class="img-responsive" id="im">
+
+</figure>
+</div>
+<div class="jumbotron">
+<p id="center">WE DESIGN YOUR DREAM</p>
+<p id="tagline">Love is the one thing that we're capable of perceiving that transcends dimensions of time and space,our love towards design.</p>
+</div>
+<br>
+<br>
+<br>
+<!--Progress Bars for Slideshow-->
+<div id="progress-bar1" class="prog"></div>
+<div id="progress-bar2" class="prog"></div>
+<div id="progress-bar3" class="prog"></div>
+<div id="progress-bar4" class="prog"></div>
+
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="query-div">
+<p id="queries">ANY QUERIES?</p>
+<hr class="line">
+</div>
+</div>
+</div>
+<div id="contact">
+<div id="row">
+<!--mail us section-->
+<div class="col-sm-4">
+<div class="contact-div">
+<div id="row">
+<div class="col-sm-12">
+<img src="images/enquiry.png" class="contact-img">
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-type">MAIL US</p>
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-desc">Use the form below or mail us at gravity@cooperstation.biz</p>
+</div>
+</div>
+</div>
+</div>
+<!--call us section-->
+<div class="col-sm-4">
+<div class="contact-div">
+<div id="row">
+<div class="col-sm-12">
+<img src="images/call.png" class="contact-img">
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-type">CALL US</p>
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-desc">Make an appointment by calling us at <br>+91-1234567890.</p>
+</div>
+</div>
+</div>
+</div>
+<!--Visit us section-->
+<div class="col-sm-4">
+<div class="contact-div">
+<div id="row">
+<div class="col-sm-12">
+<img src="images/visit.png" class="contact-img">
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-type">VISIT US</p>
+</div>
+</div>
+<div id="row">
+<div class="col-sm-12">
+<p class="query-desc">20,Lorem ipsum,qwepsdja,Ch-600032.</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+  <!--we are here section-->
+  <div class="row">
+  <div class="col-sm-12">
+  <p id="here">WE'RE ALWAYS HERE!</p>
+  <hr id="b-line">
+  </div>
+  </div>
+  <div id="map">
+  </div>
+  <div class="row">
+<div class="col-sm-12">
+<p id="message">SEND US A MESSAGE</p>
+<hr class="line">
+</div>
+</div>
+<!--form-head-->
+<div class="row">
+<div class="col-sm-12">
+<p id="idea">Got an awesome idea?For a FREE proposal and analysis of your needs,shoot us a message.We'll get in touch with you shortly!</p>
+</div>
+</div>
+<!--form-->
+<form id="form">
+  <field class="float-label">
+    <input type="text" id="name" name="name" placeholder="Type your Name Here" tabindex="1">
+    <label for="name">How shall we call you?</label>
+  </field>
+  <field class="float-label">
+    <input type="text" id="email" name="email" placeholder="Share your email" tabindex="2">
+    <label for="email">We'll keep it safe.We promise.</label>
+  </field>
+  <field class="float-label">
+    <textarea  id="query" name="query" placeholder="Share with us any information that might help us to respond to your request." tabindex="3"></textarea>
+    <label for="query">We're All Ears!</label>
+  </field>
+  <button id="submit">SUBMIT</button>
+  </form>
+
+  <!--follow us-->
+  <div id="footer">
+  <div class="row">
+  <div class="col-sm-10">
+  <p id="copyrights">Made with <i class="fa fa-heart" style="font-size:15px;color:red"></i> from Cooper Station.&copy All Rights Reserved.</p>
+  </div>
+  <div class="col-sm-2">
+    <a href="http://www.facebook.com" class="icons" id="face"><i class="fa fa-facebook "></i></a>
+  <a href="http://www.twitter.com" class="icons" id="twit"><i class="fa fa-twitter "></i></a>
+  <a href="http://www.linkedin.com" class="icons" id="linked"><i class="fa fa-linkedin "></i></a>
+  <a href="http://www.instagram.com" class="icons" id="insta"><i class="fa fa-instagram "></i></a>
+  </div>
+  </div>
+  </div>
+  
+
+<!--End of Body-->
+</body>
+</html>
